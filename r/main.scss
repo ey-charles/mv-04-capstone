@@ -1,0 +1,238 @@
+/** Main SCCS file
+ * --------------------------------
+ *
+ * Made with ♥ byt @ey_charles
+**/
+
+// !reset
+// --------------------------------
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  font-size: 100%;
+  font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1.5;
+}
+
+// !variables
+// --------------------------------
+$font-1: 'Montserrat', sans-serif;
+$font-2: 'Lato', sans-serif;
+
+$color-black: #272a31;
+$color-orange: #ec5242;
+$color-dark: #525252;
+$color-gray: #d3d3d3;
+$color-lightgray: #f7f7f7;
+
+$bp-m: 768px;
+
+// !theme
+// --------------------------------
+html {
+  font-size: 13px;
+
+  @media (min-width: $bp-m) {
+    font-size: 16px;
+  }
+}
+
+.font-1 {
+  font-family: $font-1;
+  font-weight: 700;
+}
+
+.font-2 {
+  font-family: $font-2;
+  font-weight: 400;
+}
+
+// Text colors
+.color-black { color: $color-black; }
+.color-dark { color: $color-dark; }
+.color-orange { color: $color-orange; }
+.color-gray { color: $color-gray; }
+.color-white { color: white; }
+
+// Text sizes
+.size-1 { font-size: 3.375rem; }
+.size-2 { font-size: 2.25rem; }
+.size-3 { font-size: 1.5rem; }
+.size-4 { font-size: 1rem; }
+.size-5 { font-size: 0.75rem; }
+
+// Background colors
+.bg-dark { background-color: #282b31; }
+.bg-lightgray { background-color: $color-lightgray; }
+
+// Patterns
+.pattern-square-dark {
+  background-image: url("r/img/pattern-square-dark.png");
+}
+
+// !layout
+// --------------------------------
+.wrapper {
+  width: 90%;
+  max-width: 1048px;
+  margin: 0 auto;
+}
+
+// Flexbox grid
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $bp-m) {
+    flex-direction: row;
+  }
+}
+
+.flex-col {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  flex-basis: 100%;
+}
+
+// !Components
+// --------------------------------
+.Btn {
+  background: $color-orange;
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+
+.Btn:hover {
+  background-color: white;
+  color: $color-orange;
+}
+
+// .Hero
+.Hero {
+  padding: 5.0625rem 0;
+}
+
+.Hero-text {
+  background: $color-lightgray;
+  border: 3px solid white;
+}
+
+// .Program
+.Program-box {
+  background-color: rgba(255, 255, 255, .1);
+  padding: 0.75rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-grid;
+  grid-template-columns: 2fr 3fr 6fr;
+  align-items: center;
+  column-gap: 0.75rem;
+
+  @media (min-width: $bp-m) {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+
+.Program-box h3 {
+  font-weight: 700;
+}
+
+.Program-box p {
+  font-size: 0.85rem;
+}
+
+// .Speaker
+.Speaker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Speaker-fig {
+  flex-basis: 120px;
+  height: 120px;
+  background: $color-gray;
+  flex-shrink: 0;
+}
+
+.Speaker-info {
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+}
+
+// !utilities
+// --------------------------------
+// display
+.d-inline-block { display: inline-block; }
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-flex { display: flex; }
+
+// whitespace
+$sizes: ("s": 0.75rem, "m": 1.5rem, "l": 2.25rem, "xl": 3.375rem);
+
+// padding y-axis
+@each $name, $size in $sizes {
+  .py-#{$name} {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+}
+
+// padding x-axis
+@each $name, $size in $sizes {
+  .px-#{$name} {
+    padding-left: $size;
+    padding-right: $size;
+  }
+}
+
+// margin y-axis
+@each $name, $size in $sizes {
+  .my-#{$name} {
+    margin-top: $size;
+  }
+}
+
+// margin top
+@each $name, $size in $sizes {
+  .mt-#{$name} {
+    margin-top: $size;
+  }
+}
+
+// margin bottom
+@each $name, $size in $sizes {
+  .mb-#{$name} {
+    margin-bottom: $size;
+  }
+}
+
+// text utilities
+.text-center { text-align: center; }
+.text-uppercase { text-transform: uppercase; }
