@@ -4,6 +4,20 @@
  * Made with ♥ byt @ey_charles
 **/
 
+// !variables
+// --------------------------------
+$font-1: 'Montserrat', sans-serif;
+$font-2: 'Lato', sans-serif;
+
+$color-black: #272a31;
+$color-orange: #ec5242;
+$color-dark: #525252;
+$color-gray: #d3d3d3;
+$color-lightgray: #f7f7f7;
+
+$bp-m: 768px;
+$bp-l: 1048px;
+
 // !reset
 // --------------------------------
 html, body, div, span, applet, object, iframe,
@@ -24,7 +38,8 @@ time, mark, audio, video {
 	border: 0;
   font-size: 100%;
   font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 article, aside, details, figcaption, figure, 
@@ -36,18 +51,9 @@ body {
 	line-height: 1.5;
 }
 
-// !variables
-// --------------------------------
-$font-1: 'Montserrat', sans-serif;
-$font-2: 'Lato', sans-serif;
-
-$color-black: #272a31;
-$color-orange: #ec5242;
-$color-dark: #525252;
-$color-gray: #d3d3d3;
-$color-lightgray: #f7f7f7;
-
-$bp-m: 768px;
+img {
+  max-width: 100%;
+}
 
 // !theme
 // --------------------------------
@@ -56,6 +62,10 @@ html {
 
   @media (min-width: $bp-m) {
     font-size: 16px;
+  }
+
+  @media (min-width: $bp-l) {
+    font-size: 20px;
   }
 }
 
@@ -85,11 +95,20 @@ html {
 
 // Background colors
 .bg-dark { background-color: #282b31; }
+.bg-white { background: white;}
 .bg-lightgray { background-color: $color-lightgray; }
+.bg-translucid { background-color: rgba(247, 247, 247, 0.6);}
+.bg-translucid-95 { background-color: rgba(247, 247, 247, 0.95);}
+.bg-airtable { background: url("r/img/bg-airtable.jpg"); }
 
 // Patterns
 .pattern-square-dark {
   background-image: url("r/img/pattern-square-dark.png");
+}
+
+// Shadows
+.shadow-1 {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
 // !layout
@@ -104,6 +123,7 @@ html {
 .flex {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media (min-width: $bp-m) {
     flex-direction: row;
@@ -114,6 +134,20 @@ html {
   box-sizing: border-box;
   padding: 0.5rem;
   flex-basis: 100%;
+}
+
+// Two columns
+.f-2-cols,
+.f-3cols {
+  flex-wrap: wrap;
+}
+
+.f-2-cols .flex-col { flex-basis: 50%; }
+.f-3-cols .flex-col { flex-basis: 33.3%; }
+
+// flex modifiers
+.f-align-center {
+  align-items: center;
 }
 
 // !Components
@@ -133,6 +167,14 @@ html {
 // .Hero
 .Hero {
   padding: 5.0625rem 0;
+}
+
+.Hero h1 {
+  -webkit-text-stroke: 2px black;
+}
+
+.Hero-subtitle {
+  -webkit-text-stroke: 1px black;
 }
 
 .Hero-text {
@@ -171,6 +213,7 @@ html {
 .Speaker {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
 
 .Speaker-fig {
@@ -185,6 +228,45 @@ html {
   padding-left: 1.5rem;
 }
 
+// .Topbar
+.Topbar-item {
+  color: $color-gray;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 0.75rem;
+
+  &:hover {
+    color: white;
+  }
+}
+
+// Menubar
+.Menubar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.Menubar-right {
+  text-align: right;
+}
+
+.Menubar-logo {
+  width: 6rem;
+}
+
+.Menubar-item {
+  color: $color-dark;
+  text-decoration: none;
+  margin-left: 3.375rem;
+}
+
+.-current.Menubar-item {
+  color: $color-orange;
+  cursor: default;
+}
+
 // !utilities
 // --------------------------------
 // display
@@ -192,6 +274,14 @@ html {
 .d-block { display: block; }
 .d-inline { display: inline; }
 .d-flex { display: flex; }
+.d-none { display: none; }
+
+// Responsive hide
+@media (max-width: $bp-m) {
+  .hide-below-m {
+    display: none !important;
+  }
+}
 
 // whitespace
 $sizes: ("s": 0.75rem, "m": 1.5rem, "l": 2.25rem, "xl": 3.375rem);
@@ -235,4 +325,5 @@ $sizes: ("s": 0.75rem, "m": 1.5rem, "l": 2.25rem, "xl": 3.375rem);
 
 // text utilities
 .text-center { text-align: center; }
+.text-right { text-align: right; }
 .text-uppercase { text-transform: uppercase; }
