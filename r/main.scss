@@ -111,6 +111,17 @@ html {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
+// Links
+.link {
+  color: $color-orange;
+
+  &:hover {
+    color: white;
+    background: $color-orange;
+    text-decoration: none;
+  }
+}
+
 // !layout
 // --------------------------------
 .wrapper {
@@ -146,9 +157,10 @@ html {
 .f-3-cols .flex-col { flex-basis: 33.3%; }
 
 // flex modifiers
-.f-align-center {
-  align-items: center;
-}
+.f-align-center { align-items: center; }
+.f-justify-start { justify-content: flex-start; }
+.f-justify-start .flex-col { flex-basis: auto; }
+
 
 // !Components
 // --------------------------------
@@ -253,6 +265,7 @@ html {
 }
 
 .Menubar-logo {
+  display: block;
   width: 6rem;
 }
 
@@ -260,11 +273,35 @@ html {
   color: $color-dark;
   text-decoration: none;
   margin-left: 3.375rem;
+
+  &:hover {
+    color: $color-orange;
+  }
 }
 
 .-current.Menubar-item {
   color: $color-orange;
   cursor: default;
+}
+
+.Menubar-btn {
+  color: white;
+  background: $color-orange;
+  text-decoration: none;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    padding: 1.55rem;
+  }
+}
+
+// Footer
+.Footer-logo {
+  width: 6rem;
 }
 
 // !utilities
@@ -327,3 +364,4 @@ $sizes: ("s": 0.75rem, "m": 1.5rem, "l": 2.25rem, "xl": 3.375rem);
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-uppercase { text-transform: uppercase; }
+.text-bold { font-weight: 700; }

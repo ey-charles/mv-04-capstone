@@ -135,6 +135,15 @@ html {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
+.link {
+  color: #ec5242;
+}
+.link:hover {
+  color: white;
+  background: #ec5242;
+  text-decoration: none;
+}
+
 .wrapper {
   width: 90%;
   max-width: 1048px;
@@ -173,6 +182,14 @@ html {
 
 .f-align-center {
   align-items: center;
+}
+
+.f-justify-start {
+  justify-content: flex-start;
+}
+
+.f-justify-start .flex-col {
+  flex-basis: auto;
 }
 
 .Btn {
@@ -271,6 +288,7 @@ html {
 }
 
 .Menubar-logo {
+  display: block;
   width: 6rem;
 }
 
@@ -279,10 +297,31 @@ html {
   text-decoration: none;
   margin-left: 3.375rem;
 }
+.Menubar-item:hover {
+  color: #ec5242;
+}
 
 .-current.Menubar-item {
   color: #ec5242;
   cursor: default;
+}
+
+.Menubar-btn {
+  color: white;
+  background: #ec5242;
+  text-decoration: none;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.Menubar-btn:hover {
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  padding: 1.55rem;
+}
+
+.Footer-logo {
+  width: 6rem;
 }
 
 .d-inline-block {
@@ -408,6 +447,10 @@ html {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */
