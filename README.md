@@ -14,7 +14,7 @@ Creating a conference website from scratch.
 
 ## Live Demo
 
-[Live Demo Link](https://chuckbuckethead.github.io/microverse-nyt-article/)
+[Live Demo Link](https://ey-charles.github.io/mv-04-capstone/)
 
 ## Author
 
