@@ -211,6 +211,7 @@ html {
 .link {
   color: #ec5242;
 }
+
 .link:hover {
   color: white;
   background: #ec5242;
@@ -233,7 +234,7 @@ html {
   position: relative;
 }
 
-.border-mini:after {
+.border-mini::after {
   background: #ec5242;
   display: inline-block;
   width: 2rem;
@@ -402,6 +403,7 @@ html {
   display: inline-block;
   margin-left: 0.75rem;
 }
+
 .Topbar-item:hover {
   color: white;
 }
@@ -427,6 +429,7 @@ html {
   text-decoration: none;
   margin-left: 3.375rem;
 }
+
 .Menubar-item:hover {
   color: #ec5242;
 }
@@ -529,7 +532,9 @@ html {
   background: #f7f7f7;
 }
 
-.TicketTable td, .TicketTable tr, .TicketTable th {
+.TicketTable td,
+.TicketTable tr,
+.TicketTable th {
   border: 1px solid #d3d3d3;
   padding: 0.5rem;
 }
