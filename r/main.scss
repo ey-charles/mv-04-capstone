@@ -122,6 +122,22 @@ html {
   }
 }
 
+.border-mini {
+  position: relative;
+}
+
+.border-mini:after {
+  background: $color-orange;
+  display: inline-block;
+  width: 2rem;
+  height: 2px;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
 // !layout
 // --------------------------------
 .wrapper {
@@ -130,15 +146,16 @@ html {
   margin: 0 auto;
 }
 
+.wrapper-m {
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 // Flexbox grid
 .flex {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-
-  @media (min-width: $bp-m) {
-    flex-direction: row;
-  }
 }
 
 .flex-col {
@@ -158,8 +175,24 @@ html {
 
 // flex modifiers
 .f-align-center { align-items: center; }
+.f-wrap { flex-wrap: wrap; }
+
+.f-justify-around { justify-content: space-around;}
+.f-justify-evenly { justify-content: space-evenly;}
 .f-justify-start { justify-content: flex-start; }
-.f-justify-start .flex-col { flex-basis: auto; }
+
+.f-justify-around .flex-col,
+.f-justify-start .flex-col,
+.f-justify-evenly .flex-col {
+  flex-basis: auto;
+}
+
+// responsive breakpoints
+@media (max-width: $bp-m) {
+  .f-column-below-m {
+    flex-direction: column;
+  }
+}
 
 
 // !Components
@@ -240,6 +273,10 @@ html {
   padding-left: 1.5rem;
 }
 
+.Speaker h3 {
+  font-weight: 700;
+}
+
 // .Topbar
 .Topbar-item {
   color: $color-gray;
@@ -304,6 +341,23 @@ html {
   width: 6rem;
 }
 
+// Partners
+.Partner-logo {
+  width: 10rem;
+  -webkit-filter: grayscale(1) brightness(180%);
+  filter: grayscale(1) brightness(180%);
+}
+
+.Partner-logo.google {
+  -webkit-filter: grayscale(1) brightness(90%);
+  filter: grayscale(1) brightness(90%);
+}
+
+.Partner-logo.css-tricks {
+  -webkit-filter: brightness(250%);
+  filter: brightness(250%);
+}
+
 // !utilities
 // --------------------------------
 // display
@@ -365,3 +419,4 @@ $sizes: ("s": 0.75rem, "m": 1.5rem, "l": 2.25rem, "xl": 3.375rem);
 .text-right { text-align: right; }
 .text-uppercase { text-transform: uppercase; }
 .text-bold { font-weight: 700; }
+.text-italic { font-style: italic; }
