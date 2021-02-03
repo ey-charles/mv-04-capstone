@@ -424,6 +424,44 @@ html {
   display: flex;
 }
 
+// TicketTable
+.TicketTable {
+  background: white;
+  border-collapse: collapse;
+  width: 100%;
+
+  thead {
+    background: $color-lightgray;
+  }
+
+  td, tr, th {
+    border: 1px solid $color-gray;
+    padding: 0.5rem;
+  }
+
+  td {
+    padding: 1rem 0.5rem;
+  }
+
+  th {
+    font-weight: 700;
+  }
+
+  label {
+    color: $color-orange;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.postal-border {
+  background: url("r/img/pattern-brief.jpg");
+  padding: 0.5rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+}
+
 // !utilities
 // --------------------------------
 // display

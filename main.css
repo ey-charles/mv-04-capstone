@@ -446,6 +446,38 @@ html {
   display: flex;
 }
 
+.TicketTable {
+  background: white;
+  border-collapse: collapse;
+  width: 100%;
+}
+.TicketTable thead {
+  background: #f7f7f7;
+}
+.TicketTable td, .TicketTable tr, .TicketTable th {
+  border: 1px solid #d3d3d3;
+  padding: 0.5rem;
+}
+.TicketTable td {
+  padding: 1rem 0.5rem;
+}
+.TicketTable th {
+  font-weight: 700;
+}
+.TicketTable label {
+  color: #ec5242;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+  cursor: pointer;
+}
+
+.postal-border {
+  background: url("r/img/pattern-brief.jpg");
+  padding: 0.5rem;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+}
+
 .d-inline-block {
   display: inline-block;
 }
