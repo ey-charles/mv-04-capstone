@@ -119,6 +119,10 @@ html {
   background-color: rgba(247, 247, 247, 0.6);
 }
 
+.bg-translucid-85 {
+  background-color: rgba(247, 247, 247, 0.85);
+}
+
 .bg-translucid-95 {
   background-color: rgba(247, 247, 247, 0.95);
 }
@@ -142,6 +146,14 @@ html {
   color: white;
   background: #ec5242;
   text-decoration: none;
+}
+
+.border {
+  border: 1px solid #d3d3d3;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .border-mini {
@@ -379,6 +391,35 @@ html {
   filter: brightness(250%);
 }
 
+.Contest-logo {
+  display: block;
+  max-width: 18rem;
+  margin: 0 auto;
+}
+
+.Past-item {
+  min-height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Past-item-text {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.conf-2020 {
+  background: url("r/img/conf-2020.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.conf-2019 {
+  background: url("r/img/conf-2019.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .d-inline-block {
   display: inline-block;
 }
@@ -415,13 +456,13 @@ html {
 }
 
 .py-l {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-xl {
-  padding-top: 3.375rem;
-  padding-bottom: 3.375rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .px-s {
@@ -435,13 +476,13 @@ html {
 }
 
 .px-l {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-xl {
-  padding-left: 3.375rem;
-  padding-right: 3.375rem;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
 }
 
 .my-s {
@@ -453,11 +494,11 @@ html {
 }
 
 .my-l {
-  margin-top: 2.25rem;
+  margin-top: 3rem;
 }
 
 .my-xl {
-  margin-top: 3.375rem;
+  margin-top: 4.5rem;
 }
 
 .mt-s {
@@ -469,11 +510,11 @@ html {
 }
 
 .mt-l {
-  margin-top: 2.25rem;
+  margin-top: 3rem;
 }
 
 .mt-xl {
-  margin-top: 3.375rem;
+  margin-top: 4.5rem;
 }
 
 .mb-s {
@@ -485,11 +526,11 @@ html {
 }
 
 .mb-l {
-  margin-bottom: 2.25rem;
+  margin-bottom: 3rem;
 }
 
 .mb-xl {
-  margin-bottom: 3.375rem;
+  margin-bottom: 4.5rem;
 }
 
 .text-center {

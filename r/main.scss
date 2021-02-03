@@ -98,6 +98,7 @@ html {
 .bg-white { background: white;}
 .bg-lightgray { background-color: $color-lightgray; }
 .bg-translucid { background-color: rgba(247, 247, 247, 0.6);}
+.bg-translucid-85 { background-color: rgba(247, 247, 247, 0.85);}
 .bg-translucid-95 { background-color: rgba(247, 247, 247, 0.95);}
 .bg-airtable { background: url("r/img/bg-airtable.jpg"); }
 
@@ -120,6 +121,14 @@ html {
     background: $color-orange;
     text-decoration: none;
   }
+}
+
+.border {
+  border: 1px solid $color-gray;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $color-gray;
 }
 
 .border-mini {
@@ -358,6 +367,37 @@ html {
   filter: brightness(250%);
 }
 
+// .Contest
+.Contest-logo {
+  display: block;
+  max-width: 18rem;
+  margin: 0 auto;
+}
+
+// .Past
+.Past-item {
+  min-height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Past-item-text {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.conf-2020 {
+  background: url("r/img/conf-2020.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.conf-2019 {
+  background: url("r/img/conf-2019.jpg") center no-repeat;
+  background-size: cover;
+}
+
 // !utilities
 // --------------------------------
 // display
@@ -375,7 +415,7 @@ html {
 }
 
 // whitespace
-$sizes: ("s": 0.75rem, "m": 1.5rem, "l": 2.25rem, "xl": 3.375rem);
+$sizes: ("s": 0.75rem, "m": 1.5rem, "l": 3rem, "xl": 4.5rem);
 
 // padding y-axis
 @each $name, $size in $sizes {
