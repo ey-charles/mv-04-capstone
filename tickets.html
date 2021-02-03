@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airtable Master | Buy tickets</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,800;0,900;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body class="font-2">
+  <div class="Topbar bg-dark py-s text-right hide-below-m">
+    <div class="wrapper">
+      <a href="#" class="Topbar-item"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="Topbar-item"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="Topbar-item">Login</a>
+    </div>
+  </div>
+  <!-- .Topbar -->
+
+  <div class="Menubar bg-white py-s shadow-1 hide-below-m">
+    <div class="wrapper">
+      <div class="flex f-align-center">
+        <div class="col Menubar-left">
+          <div class="Menubar-logo">
+            <a href="/">
+              <img src="r/img/logo.svg" alt="Airtable master">
+            </a>
+          </div>
+        </div>
+
+        <div class="col Menubar-right">
+          <a href="about.html" class="Menubar-item">About</a>
+          <a href="#" class="Menubar-item">Program</a>
+          <a href="tickets.html" class="-current Menubar-item">Tickets</a>
+          <a href="tickets.html" class="Menubar-item Menubar-btn">Join</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- .Menubar -->
+
+  <div class="Menuicon bg-translucid">
+    <i class="bi bi-list size-2"></i>
+  </div>
+  <!-- .Menuicon -->
+
+  <form action="/" class="Form">
+    <div class="bg-lightgray Form-section">
+      <div class="wrapper py-xl">
+        <h1 class="size-3 mb-m border-mini text-center">Select Tickets</h1>
+        
+        <div class="Form-instruction f-justify-around">
+          <p class="d-inline-block border py-s px-m bg-translucid-95 border-radius-5">
+            <span class="color-orange text-bold d-inline-block mr-s">STEP 1</span>
+            Please select the day when you want to join Airtable Master</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="Form-section">
+      <div class="wrapper py-l">
+        <h2 class="size-3 mb-m border-mini text-center">Select Your Lunch</h2>
+
+        <div class="Form-instruction f-justify-around">
+          <p class="d-inline-block border py-s px-m bg-translucid-95 border-radius-5">
+            <span class="color-orange text-bold d-inline-block mr-s">STEP 2</span>
+            Please select your lunch for registered day. There will be no additional charges.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="Form-section">
+      <div class="wrapper text-center">
+        <button class="Btn size-3" type="submit">Request your ticket</button>
+      </div>
+    </div>
+  </form>
+</body>
