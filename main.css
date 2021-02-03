@@ -230,7 +230,7 @@ html {
   position: relative;
 }
 
-.border-mini:after {
+.border-mini::after {
   background: #ec5242;
   display: inline-block;
   width: 2rem;

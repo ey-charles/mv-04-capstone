@@ -110,11 +110,11 @@ main,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1.5;
+  line-height: 1.5;
 }
 
 img {
@@ -205,7 +205,7 @@ html {
   position: relative;
 }
 
-.border-mini:after {
+.border-mini::after {
   background: $color-orange;
   display: inline-block;
   width: 2rem;
@@ -256,8 +256,8 @@ html {
 .f-align-center { align-items: center; }
 .f-wrap { flex-wrap: wrap; }
 
-.f-justify-around { justify-content: space-around;}
-.f-justify-evenly { justify-content: space-evenly;}
+.f-justify-around { justify-content: space-around; }
+.f-justify-evenly { justify-content: space-evenly; }
 .f-justify-start { justify-content: flex-start; }
 
 .f-justify-around .flex-col,
