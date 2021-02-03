@@ -89,11 +89,11 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
 }
@@ -161,11 +161,11 @@ html {
 
 // Background colors
 .bg-dark { background-color: #282b31; }
-.bg-white { background: white;}
+.bg-white { background: white; }
 .bg-lightgray { background-color: $color-lightgray; }
-.bg-translucid { background-color: rgba(247, 247, 247, 0.6);}
-.bg-translucid-85 { background-color: rgba(247, 247, 247, 0.85);}
-.bg-translucid-95 { background-color: rgba(247, 247, 247, 0.95);}
+.bg-translucid { background-color: rgba(247, 247, 247, 0.6); }
+.bg-translucid-85 { background-color: rgba(247, 247, 247, 0.85); }
+.bg-translucid-95 { background-color: rgba(247, 247, 247, 0.95); }
 .bg-airtable { background: url("r/img/bg-airtable.jpg"); }
 
 // Patterns
@@ -273,7 +273,6 @@ html {
   }
 }
 
-
 // !Components
 // --------------------------------
 .Btn {
@@ -312,7 +311,7 @@ html {
 
 // .Program
 .Program-box {
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 0.75rem;
   width: 100%;
   height: 100%;
@@ -500,7 +499,9 @@ html {
     background: $color-lightgray;
   }
 
-  td, tr, th {
+  td,
+  tr,
+  th {
     border: 1px solid $color-gray;
     padding: 0.5rem;
   }

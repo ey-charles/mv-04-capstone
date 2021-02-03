@@ -76,8 +76,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
 }
@@ -520,7 +520,9 @@ html {
 .TicketTable thead {
   background: #f7f7f7;
 }
-.TicketTable td, .TicketTable tr, .TicketTable th {
+.TicketTable td,
+.TicketTable tr,
+.TicketTable th {
   border: 1px solid #d3d3d3;
   padding: 0.5rem;
 }
