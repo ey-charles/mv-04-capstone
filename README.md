@@ -4,7 +4,7 @@
 
 > Fourth week of the Microverse program. First capstone project 💪🏼
 
-![screenshot](./r/img/screenshot.png)
+![screenshot](./assets/img/screenshot.png)
 
 Creating a conference website from scratch.
 

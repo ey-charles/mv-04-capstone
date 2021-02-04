@@ -166,11 +166,11 @@ html {
 .bg-translucid { background-color: rgba(247, 247, 247, 0.6); }
 .bg-translucid-85 { background-color: rgba(247, 247, 247, 0.85); }
 .bg-translucid-95 { background-color: rgba(247, 247, 247, 0.95); }
-.bg-airtable { background: url("r/img/bg-airtable.jpg"); }
+.bg-airtable { background: url("../img/bg-airtable.jpg"); }
 
 // Patterns
 .pattern-square-dark {
-  background-image: url("r/img/pattern-square-dark.png");
+  background-image: url("../img/pattern-square-dark.png");
 }
 
 // Shadows
@@ -432,12 +432,13 @@ html {
 }
 
 // Footer
-.Footer-logo {
+.footer-logo {
   width: 6rem;
 }
 
 // Partners
-.Partner-logo {
+.partner-logo {
+
   width: 10rem;
   -webkit-filter: grayscale(1) brightness(180%);
   filter: grayscale(1) brightness(180%);
@@ -475,12 +476,12 @@ html {
 }
 
 .conf-2020 {
-  background: url("r/img/conf-2020.jpg") center no-repeat;
+  background: url("../img/conf-2020.jpg") center no-repeat;
   background-size: cover;
 }
 
 .conf-2019 {
-  background: url("r/img/conf-2019.jpg") center no-repeat;
+  background: url("../img/conf-2019.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -524,7 +525,7 @@ html {
 }
 
 .postal-border {
-  background: url("r/img/pattern-brief.jpg");
+  background: url("../img/pattern-brief.jpg");
   padding: 0.5rem;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
 }
