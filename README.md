@@ -3,10 +3,11 @@
 # HTML & CSS Project: Conference website
 
 > Fourth week of the Microverse program. First capstone project 💪🏼
+> Done entirely from scratch, using mostly vanlissa CSS with a little help from Sass
 
-![screenshot](./assets/img/screenshot.png)
+![screenshot](./assets/img/screenshot.jpg)
 
-Creating a conference website from scratch.
+In this project we created a conference website from scratch, using the design of [Cindy Shin](https://www.behance.net/adagio07) as a starting point. We took some creative freedom on the topic and styling, but mostly respected the client's brief (which is Cindy's original design).
 
 ## Built With
 
