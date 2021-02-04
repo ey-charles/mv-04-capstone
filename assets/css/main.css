@@ -361,8 +361,9 @@ html {
   }
 }
 
-.Program-box h3 {
+.Program-box h3 a {
   font-weight: 700;
+  text-decoration: none;
 }
 
 .Program-box p {
